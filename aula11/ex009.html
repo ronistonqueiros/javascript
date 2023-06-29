@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Vivendo em : <input type="string" id="bra"> 
+    <input type="button" value="Buscar" onclick="calcular()" >
+    <div id="res">
+
+    </div>
+    
+
+    <script>
+        function calcular() {
+            var pais = window.document.querySelector('input#bra')
+            var res = window.document.querySelector('div#res')
+            var viw = String(pais.value)
+            res.innerHTML = `voce nasceu no pais: ${viw}`
+            if (viw == 'Brasil') {
+                res.innerHTML = `<p>Você é <strong> BRASILEIRO !!!</strong> </p>`
+            } else {
+                res.innerHTML = `<p>Você é <strong> ESTRANGEIRO !!!</strong> </p>`
+            }
+               
+            }
+        
+    </script>
+</body>
+</html>
