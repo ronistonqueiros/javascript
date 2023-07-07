@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Página Web</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      color: #333333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bem-vindo à minha página web!</h1>
+    <p>Esta é uma página web básica criada com HTML, CSS e JavaScript.</p>
+    <button id="botao">Clique-me</button>
+
+    <script>
+      // JavaScript
+      var botao = document.getElementById("botao");
+      botao.addEventListener("click", function() {
+        alert("Você clicou no botão!");
+      });
+    </script>
+  </div>
+</body>
+</html>
