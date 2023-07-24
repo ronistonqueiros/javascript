@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PMP - RASTREAMENTO DUBLE</title> <!-- SUBSTITUIR POR TÍTULO DA PÁGINA -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Importações JS-->
+        <script src="ferias.js"></script>
+        <script src="https://static.scania.com/build/global/themes/scania/1.1.2-1/scania-theme.js"></script>
+        <script src="https://static.scania.com/build/global/4.1.1-1/corporate-ui.js"></script>
+        <script src="/js/home.js" defer></script>
+        <script src="/src/React/react.production.min.js"></script>
+        <script src="/src/React/react-dom.production.min.js"></script>
+        <script src="/src/React/babel.min.js"></script>
+        <script type="text/babel" src="/src/ReactComponents/HeaderMain.jsx"></script>
+
+        <!--Importações CSS-->
+        <link rel="stylesheet" href="/css/home.css">
+    </head>
+
+    <body>
+        <c-theme name="scania" global="true"></c-theme>
+        <c-header site-name="Plant management platform"></c-header>
+
+        <c-navigation id="header"></c-navigation> <!----- BARRA DE MENU ------>
+            <script type="text/babel">
+                const headerRoot = ReactDOM.createRoot(document.getElementById("header"));
+                headerRoot.render(<HeaderMain />);
+            </script>
+
+        <c-content>
+            <section>
+                <!------------- CORPO DA PÁGINA ------------>
+            </section>    
+        </c-content>
+
+        <c-footer> <!----- FOOTER PODE SER REMOVIDO SE PRECISAR DE ESPAÇO ----->
+            <a href="" slot="items">Contact</a>
+        </c-footer>
+    </body>
+</html>
