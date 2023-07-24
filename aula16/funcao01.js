@@ -6,5 +6,5 @@ function parimpar(n) {
     }
 }
 
-let res = parimpar(565)
+let res = parimpar(56)
 console.log(res)
